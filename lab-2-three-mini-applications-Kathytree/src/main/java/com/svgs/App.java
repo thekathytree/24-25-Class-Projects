@@ -19,7 +19,7 @@ public class App extends Application {
     public void start(@SuppressWarnings("exports") Stage stage) throws IOException {
         // remember to change this to whatever you called the FXML file
         scene = new Scene(loadFXML("rockPaperScissor")); 
-        scene = new Scene(loadFXML("inspireMe")); 
+        //scene = new Scene(loadFXML("inspireMe")); 
         stage.setScene(scene);
         stage.show();
     }
