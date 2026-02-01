@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="582.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.svgs.AchievementController">
+   <children>
+      <HBox layoutX="12.0" prefHeight="38.0" prefWidth="258.0">
+         <children>
+            <TextField fx:id="playerText" prefHeight="26.0" prefWidth="100.0" promptText="Player name...">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#addPlayer" style="-fx-background-color: #DBB4E2; -fx-border-color: purple; -fx-border-radius: 5px;" text="Add">
+               <HBox.margin>
+                  <Insets left="15.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#removePlayer" style="-fx-background-color: #DBB4E2; -fx-border-color: purple; -fx-border-radius: 5px;" text="Remove">
+               <HBox.margin>
+                  <Insets left="15.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="309.0" prefHeight="38.0" prefWidth="274.0">
+         <children>
+            <TextField fx:id="achText" prefHeight="26.0" prefWidth="101.0" promptText="Achievement...">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="earnACButt" mnemonicParsing="false" onAction="#earnAch" style="-fx-background-color: #DBB4E2; -fx-border-color: purple; -fx-border-radius: 5px;" text="Earn">
+               <HBox.margin>
+                  <Insets left="15.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="removeACButt" mnemonicParsing="false" onAction="#removeAch" style="-fx-background-color: #DBB4E2; -fx-border-color: purple; -fx-border-radius: 5px;" text="Remove">
+               <HBox.margin>
+                  <Insets left="15.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <ListView fx:id="playerField" layoutX="12.0" layoutY="41.0" prefHeight="239.0" prefWidth="258.0" style="-fx-border-color: purple; -fx-border-radius: 5px;" AnchorPane.leftAnchor="12.0" />
+      <ImageView fitHeight="198.0" fitWidth="215.0" layoutX="339.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Kirby-Transparent-File.png" />
+         </image>
+      </ImageView>
+      <ListView fx:id="achField" layoutX="309.0" layoutY="41.0" prefHeight="239.0" prefWidth="258.0" style="-fx-border-color: purple; -fx-border-radius: 5px;" AnchorPane.rightAnchor="14.600000000000023" />
+      <Button layoutX="269.0" layoutY="244.0" mnemonicParsing="false" onAction="#savePlay" style="-fx-background-color: #DBB4E2; -fx-border-color: purple; -fx-border-radius: 5px;" text="Save" />
+   </children>
+</AnchorPane>
