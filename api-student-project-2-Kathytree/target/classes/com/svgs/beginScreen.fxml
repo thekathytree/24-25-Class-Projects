@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="252.0" prefWidth="382.0" style="-fx-background-color: #FFF79E; -fx-border-color: #D3A064; -fx-border-width: 10px;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.svgs.BeginController">
+   <children>
+      <Label layoutX="25.0" layoutY="34.0" prefHeight="51.0" prefWidth="331.0" text="Welcome to the Wonders of Animals Guessing Game!" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Baskerville Old Face" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="startButt" layoutX="124.0" layoutY="99.0" mnemonicParsing="false" onAction="#startGame" style="-fx-background-color: #D3A064;" text="Start Guessing" wrapText="true">
+         <font>
+            <Font name="Baskerville Old Face" size="19.0" />
+         </font>
+      </Button>
+      <Label alignment="TOP_CENTER" layoutX="53.0" layoutY="149.0" prefHeight="78.0" prefWidth="274.0" text="Instructions: Please type your guesses in the box provided, there is no guessing limit. Hint: If you correctly select the diet of the animal, the final hint will be revealed." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Baskerville Old Face" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="78.0" fitWidth="82.0" layoutX="274.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@paw1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="78.0" fitWidth="82.0" layoutX="33.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@paw2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
